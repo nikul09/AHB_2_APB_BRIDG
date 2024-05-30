@@ -1,0 +1,142 @@
+wvCreateWindow
+wvConvertFile -win $_nWave2 -o \
+           "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd.fsdb" \
+           "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd.fsdb}
+wvSetPosition -win $_nWave2 {("G1" 0)}
+nMemSetPreference
+srcSetDisplayAttr -font {-fromGUI}
+srcSetDisplayAttr -annotFont {Helvetica 10}
+wvSetCursor -win $_nWave2 9.042107
+wvSelectGroup -win $_nWave2 {G1}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/ahb_top"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_apb_bridge_RTL"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_apb_bridge_RTL"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/apb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/apb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/apb_pinf"
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/ahb_pinf"
+wvSetPosition -win $_nWave2 {("G1" 13)}
+wvSetPosition -win $_nWave2 {("G1" 13)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/ahb_top/ahb_pinf/HADDR\[31:0\]} \
+{/ahb_top/ahb_pinf/HBURST\[2:0\]} \
+{/ahb_top/ahb_pinf/HCLK} \
+{/ahb_top/ahb_pinf/HRDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HREADY} \
+{/ahb_top/ahb_pinf/HREADYin} \
+{/ahb_top/ahb_pinf/HREADYout} \
+{/ahb_top/ahb_pinf/HRESETn} \
+{/ahb_top/ahb_pinf/HRESP\[1:0\]} \
+{/ahb_top/ahb_pinf/HSIZE\[2:0\]} \
+{/ahb_top/ahb_pinf/HTRANS\[1:0\]} \
+{/ahb_top/ahb_pinf/HWDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HWRITE} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 )} 
+wvSetPosition -win $_nWave2 {("G1" 13)}
+wvGetSignalSetScope -win $_nWave2 "/ahb_top/apb_pinf"
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/ahb_top/ahb_pinf/HADDR\[31:0\]} \
+{/ahb_top/ahb_pinf/HBURST\[2:0\]} \
+{/ahb_top/ahb_pinf/HCLK} \
+{/ahb_top/ahb_pinf/HRDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HREADY} \
+{/ahb_top/ahb_pinf/HREADYin} \
+{/ahb_top/ahb_pinf/HREADYout} \
+{/ahb_top/ahb_pinf/HRESETn} \
+{/ahb_top/ahb_pinf/HRESP\[1:0\]} \
+{/ahb_top/ahb_pinf/HSIZE\[2:0\]} \
+{/ahb_top/ahb_pinf/HTRANS\[1:0\]} \
+{/ahb_top/ahb_pinf/HWDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HWRITE} \
+{/ahb_top/apb_pinf/HCLK} \
+{/ahb_top/apb_pinf/HRESETn} \
+{/ahb_top/apb_pinf/PADDR\[31:0\]} \
+{/ahb_top/apb_pinf/PENABLE} \
+{/ahb_top/apb_pinf/PRDATA\[31:0\]} \
+{/ahb_top/apb_pinf/PSEL\[2:0\]} \
+{/ahb_top/apb_pinf/PSLVERR} \
+{/ahb_top/apb_pinf/PWDATA\[31:0\]} \
+{/ahb_top/apb_pinf/PWRITE} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 14 15 16 17 18 19 20 21 22 )} 
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/ahb_top/ahb_pinf/HADDR\[31:0\]} \
+{/ahb_top/ahb_pinf/HBURST\[2:0\]} \
+{/ahb_top/ahb_pinf/HCLK} \
+{/ahb_top/ahb_pinf/HRDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HREADY} \
+{/ahb_top/ahb_pinf/HREADYin} \
+{/ahb_top/ahb_pinf/HREADYout} \
+{/ahb_top/ahb_pinf/HRESETn} \
+{/ahb_top/ahb_pinf/HRESP\[1:0\]} \
+{/ahb_top/ahb_pinf/HSIZE\[2:0\]} \
+{/ahb_top/ahb_pinf/HTRANS\[1:0\]} \
+{/ahb_top/ahb_pinf/HWDATA\[31:0\]} \
+{/ahb_top/ahb_pinf/HWRITE} \
+{/ahb_top/apb_pinf/HCLK} \
+{/ahb_top/apb_pinf/HRESETn} \
+{/ahb_top/apb_pinf/PADDR\[31:0\]} \
+{/ahb_top/apb_pinf/PENABLE} \
+{/ahb_top/apb_pinf/PRDATA\[31:0\]} \
+{/ahb_top/apb_pinf/PSEL\[2:0\]} \
+{/ahb_top/apb_pinf/PSLVERR} \
+{/ahb_top/apb_pinf/PWDATA\[31:0\]} \
+{/ahb_top/apb_pinf/PWRITE} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 14 15 16 17 18 19 20 21 22 )} 
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvGetSignalClose -win $_nWave2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvSetCursor -win $_nWave2 20.411407 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 20.411407 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 30.711607 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 43.279742 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 43.468736 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 60.856231 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvSetCursor -win $_nWave2 8.504753 -snap {("G1" 2)}
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 11 )} 
+wvSetPosition -win $_nWave2 {("G1" 11)}
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSelectSignal -win $_nWave2 {( "G1" 2 3 )} 
+wvSetCursor -win $_nWave2 209.027922 -snap {("G1" 12)}
+wvSetCursor -win $_nWave2 99.033121 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 104.324967 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 87.315461 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 189.750483 -snap {("G2" 0)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSaveSignal -win $_nWave2 \
+           "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/verdiLog/novas_autosave.ses.wave.0"
+debExit

@@ -1,0 +1,4 @@
+DPI_STUB_OBJS += ./../simv.daidir/vc_hdrs.o
+./../simv.daidir/vc_hdrs.o: ./../simv.daidir/vc_hdrs.c
+	@$(CC) -I/global/apps/vcs_2020.03/vcs/Q-2020.03/include  -pipe -m32 -DVCS    -I/global/apps/vcs_2020.03/vcs/Q-2020.03/include  -fPIC -c -o ./../simv.daidir/vc_hdrs.o ./../simv.daidir/vc_hdrs.c
+	@strip -g ./../simv.daidir/vc_hdrs.o

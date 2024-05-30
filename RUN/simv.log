@@ -1,0 +1,107 @@
+Command: /remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/./simv -l simv.log +ntb_random_seed=1 +UVM_TESTNAME=ahb_senity_test
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03; Runtime version Q-2020.03;  May 28 16:32 2024
+----------------------------------------------------------------
+UVM-1.1c
+(C) 2007-2012 Mentor Graphics Corporation
+(C) 2007-2012 Cadence Design Systems, Inc.
+(C) 2006-2012 Synopsys, Inc.
+(C) 2011-2012 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test ahb_senity_test...
+UVM_INFO ../ENV/ahb_env.sv(14) @ 0: uvm_test_top.env [ahb_env] constructor!
+UVM_INFO ../ENV/ahb_env.sv(19) @ 0: uvm_test_top.env [ahb_env] Build_phase
+UVM_INFO ../ENV/ahb_m_age.sv(15) @ 0: uvm_test_top.env.m_age [ahb_m_age] constructor
+UVM_INFO ../ENV/ahb_s_age.sv(15) @ 0: uvm_test_top.env.s_age [ahb_s_age] constructor!
+UVM_INFO ../ENV/ahb_m_age.sv(20) @ 0: uvm_test_top.env.m_age [ahb_m_age] build phase
+UVM_INFO ../ENV/ahb_m_drv.sv(19) @ 0: uvm_test_top.env.m_age.m_drv [ahb_m_drv] AHB Master Driver Constructor !
+UVM_INFO ../ENV/ahb_m_drv.sv(26) @ 0: uvm_test_top.env.m_age.m_drv [ahb_m_drv] AHB Master Driver Build Phase !
+UVM_INFO ../ENV/ahb_m_mon.sv(27) @ 0: uvm_test_top.env.m_age.m_mon [m_mon] Build phase Slave Monitor
+UVM_INFO ../ENV/ahb_s_age.sv(20) @ 0: uvm_test_top.env.s_age [ahb_s_age] Build_phase
+UVM_INFO ../ENV/ahb_s_drv.sv(19) @ 0: uvm_test_top.env.s_age.s_drv [ahb_s_drv] AHB slave Driver Constructor !
+UVM_INFO ../ENV/ahb_s_drv.sv(24) @ 0: uvm_test_top.env.s_age.s_drv [ahb_s_drv] AHB slave Driver Build Phase !
+UVM_INFO ../ENV/ahb_m_age.sv(28) @ 0: uvm_test_top.env.m_age [ahb_m_age] connect phase
+UVM_INFO ../ENV/ahb_s_age.sv(28) @ 0: uvm_test_top.env.s_age [ahb_s_age] connect_phase
+UVM_INFO ../ENV/ahb_env.sv(26) @ 0: uvm_test_top.env [ahb_env] connect_phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               ahb_senity_test         -     @522 
+  env                      ahb_env                 -     @530 
+    m_age                  ahb_m_age               -     @539 
+      m_drv                ahb_m_drv               -     @556 
+        rsp_port           uvm_analysis_port       -     @573 
+        seq_item_port      uvm_seq_item_pull_port  -     @564 
+      m_mon                ahb_m_mon               -     @705 
+        ahb_mon_ap         uvm_analysis_port       -     @720 
+        apb_mon_ap         uvm_analysis_port       -     @729 
+      m_sqr                ahb_m_sqr               -     @582 
+        rsp_export         uvm_analysis_export     -     @590 
+        seq_item_export    uvm_seq_item_pull_imp   -     @696 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    s_age                  ahb_s_age               -     @547 
+      s_drv                ahb_s_drv               -     @745 
+        rsp_port           uvm_analysis_port       -     @762 
+        s_drv_ip           uvm_analysis_imp        -     @894 
+        seq_item_port      uvm_seq_item_pull_port  -     @753 
+      s_sqr                ahb_s_sqr               -     @771 
+        rsp_export         uvm_analysis_export     -     @779 
+        seq_item_export    uvm_seq_item_pull_imp   -     @885 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+--------------------------------------------------------------
+
+UVM_INFO ../ENV/ahb_s_drv.sv(40) @ 0: uvm_test_top.env.s_age.s_drv [ahb_s_drv] AHB slave Driver Run Phase !
+UVM_INFO ../SQN/ahb_base_sqn.sv(15) @ 0: reporter@@ahb_wr_rd_sqn [ahb_wr_rd_sqn] inside constructor
+UVM_INFO ../SQN/ahb_wr_rd_sqn.sv(13) @ 0: reporter@@ahb_wr_rd_sqn [ahb_wr_rd_sqn] inside constructor
+UVM_INFO ../ENV/ahb_m_drv.sv(55) @ 10: uvm_test_top.env.m_age.m_drv [m_drv]  RETRIVE PACKETS FROM SQR FIFO WITH GET METHOD
+UVM_INFO ../ENV/ahb_m_drv.sv(105) @ 10: uvm_test_top.env.m_age.m_drv [m_drv]  DRIVE WRITE TRANSECTION ADDR PHASE
+UVM_INFO ../ENV/ahb_m_drv.sv(65) @ 10: uvm_test_top.env.m_age.m_drv [m_drv]  DRIVE WRITE TRANSECTION ADDR PHASE
+UVM_INFO ../ENV/ahb_m_drv.sv(124) @ 10: uvm_test_top.env.m_age.m_drv [m_drv]  PUT RESPONSE !
+UVM_INFO /remote/pviphome01/uvm-1.1c/src/base/uvm_objection.svh(1120) @ 345: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   24
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[ahb_env]     3
+[ahb_m_age]     3
+[ahb_m_drv]     2
+[ahb_s_age]     3
+[ahb_s_drv]     3
+[ahb_wr_rd_sqn]     2
+[m_drv]     4
+[m_mon]     1
+$finish called from file "/remote/pviphome01/uvm-1.1c/src/base/uvm_root.svh", line 427.
+$finish at simulation time                  345
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 345
+CPU Time:      0.700 seconds;       Data structure size:   0.4Mb
+Tue May 28 16:32:40 2024

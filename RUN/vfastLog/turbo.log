@@ -1,0 +1,3 @@
+Command Line: /global/apps/verdi_2020.03/verdi/Q-2020.03/platform/LINUXAMD64/bin/vfast -silent -del . -o /remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd.fsdb -ft verilog /remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd
+uname(Linux vgpvip3.perfectvips.com 2.6.32-504.el6.x86_64 #1 SMP Tue Sep 16 01:56:35 EDT 2014 x86_64)
+au time 0.053607 0.004999 0.017997 delta 24772608 24772608 total 100630528 100630528

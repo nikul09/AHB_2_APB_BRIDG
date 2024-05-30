@@ -1,0 +1,119 @@
+Magic 271485
+Revision Verdi_Q-2020.03
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1536 690 100 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd" "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 348.450000
+cursor 11.24366542751
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 37
+; marker line index
+markerPos 65
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/waveform.vcd.fsdb"
+addSignal -h 15 /ahb_top/HCLK
+addSignal -h 15 -holdScope HRESETn
+addSignal -h 15 /ahb_top/ahb_apb_bridge_RTL/HADDR[31:0]
+addSignal -h 15 -holdScope HADDR_1[31:0]
+addSignal -h 15 -holdScope HADDR_2[31:0]
+addSignal -h 15 -holdScope HADDR_3[31:0]
+addSignal -h 15 -holdScope HCLK
+addSignal -h 15 -holdScope HRDATA[31:0]
+addSignal -h 15 -holdScope HREADYin
+addSignal -h 15 -holdScope HREADYout
+addSignal -h 15 -holdScope HRESETn
+addSignal -h 15 -holdScope HRESP[1:0]
+addSignal -h 15 -holdScope HSIZE[2:0]
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HWDATA[31:0]
+addSignal -h 15 -holdScope HWDATA_1[31:0]
+addSignal -h 15 -holdScope HWDATA_2[31:0]
+addSignal -h 15 -holdScope HWDATA_3[31:0]
+addSignal -h 15 -holdScope HWRITE
+addSignal -h 15 -holdScope HWRITEreg
+addSignal -h 15 -holdScope NX_STATE[2:0]
+addSignal -h 15 -holdScope PADDR[31:0]
+addSignal -h 15 -holdScope PENABLE
+addSignal -h 15 -holdScope PRDATA[31:0]
+addSignal -h 15 -holdScope PSEL[2:0]
+addSignal -h 15 -holdScope PSLVERR
+addSignal -h 15 -holdScope PWDATA[31:0]
+addSignal -h 15 -holdScope PWRITE
+addSignal -h 15 -holdScope STATE[2:0]
+addSignal -h 15 -holdScope TEMP_SEL[2:0]
+addSignal -h 15 -holdScope error_addr
+addSignal -h 15 -holdScope error_read
+addSignal -h 15 -holdScope error_write
+addSignal -h 15 -holdScope tmp
+addSignal -h 15 -holdScope valid
+addSignal -h 15 -holdScope w_reg
+addSignal -h 15 /ahb_top/ahb_pinf/HADDR[31:0]
+addSignal -h 15 -holdScope HBURST[2:0]
+addSignal -h 15 -holdScope HCLK
+addSignal -h 15 -holdScope HRDATA[31:0]
+addSignal -h 15 -holdScope HREADY
+addSignal -h 15 -holdScope HREADYin
+addSignal -h 15 -holdScope HREADYout
+addSignal -h 15 -holdScope HRESETn
+addSignal -h 15 -holdScope HRESP[1:0]
+addSignal -h 15 -holdScope HSIZE[2:0]
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HWDATA[31:0]
+addSignal -h 15 -holdScope HWRITE
+addSignal -h 15 /ahb_top/apb_pinf/HCLK
+addSignal -h 15 -holdScope HRESETn
+addSignal -h 15 -holdScope PADDR[31:0]
+addSignal -h 15 -holdScope PENABLE
+addSignal -h 15 -holdScope PRDATA[31:0]
+addSignal -h 15 -holdScope PSEL[2:0]
+addSignal -h 15 -holdScope PSLVERR
+addSignal -h 15 -holdScope PWDATA[31:0]
+addSignal -h 15 -holdScope PWRITE
+addSignal -h 15 /ahb_top/mem_t/addr[31:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope din[31:0]
+addSignal -h 15 -holdScope dout[31:0]
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope valid
+addSignal -h 15 -holdScope wr_rd
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

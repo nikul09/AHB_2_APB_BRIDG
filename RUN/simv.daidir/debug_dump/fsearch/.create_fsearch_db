@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/global/apps/vcs_2020.03/vcs/Q-2020.03/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/global/apps/vcs_2020.03/vcs/Q-2020.03/linux/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/global/apps/vcs_2020.03/vcs/Q-2020.03/linux/lib:/global/apps/vcs_2020.03/vcs/Q-2020.03/linux/lib/pylib27
+export LD_LIBRARY_PATH
+/global/apps/vcs_2020.03/vcs/Q-2020.03/linux/bin/vcsfind_create_index.exe  -z  "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/simv.daidir/debug_dump/fsearch/./idents_V5wqDV.xml.gz" "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/remote/pviphome01/nikul/AHB_2_APB_BRIDGE/RUN/simv.daidir/debug_dump/fsearch/fsearch.db"
